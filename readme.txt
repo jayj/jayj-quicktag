@@ -1,11 +1,11 @@
-=== Plugin Name ===
+=== Jayj Quicktag ===
 Contributors: Jayjdk
 Tags: quicktag, quicktags, editor, quick, tag, generator, import, export
 Requires at least: 3.3
-Tested up to: 3.4
+Tested up to: 3.6.1
 Stable tag: 1.2.4
 
-Allows you easily to add custom Quicktags to the post editor
+Allows you easily to add custom Quicktags to the post editor.
 
 == Description ==
 
@@ -43,34 +43,6 @@ The other way is to leave the "Button Label" field empty.
 = Can I change the order of the Quicktags? =
 
 Yes. Since 1.2 you can change the order of the tags. Just roll over the number on the left and you should to able to drag 'n' drop the rows.
-
-= I'm a theme/plugin author, can I set up default Quicktags if a user choose to use this plugin? =
-
-Yes, you can. If you put this code in your theme's functions.php (or plugin files), they will automatically be added if a user install this plugin
-
-<code>
-function my_theme_jayj_quicktag_defaults( $defaults ) {
-	$defaults = array( 'buttons' => array(
-		array(
-			'text'  => 'h3',
-			'title' => 'Heading 3',
-			'start' => '&lt;h3&gt;',
-			'end'   => '&lt;/h3&gt;'
-		),
-		array(
-			'text'  => 'hr',
-			'title' => 'Horizontal line',
-			'start' => '&lt;hr /&gt;',
-			'end'   => ''
-		),
-
-	) );
-	
-	return $defaults;
-}
-
-add_filter( 'jayj_quicktag_defaults', 'my_theme_jayj_quicktag_defaults' );
-</code>
 
 = Can I export/import Quicktags? =
 Yes. Version 1.1 introduced the import and export feature.
