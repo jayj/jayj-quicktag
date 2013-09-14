@@ -16,7 +16,7 @@ register_uninstall_hook( __FILE__, 'jayj_quicktag_uninstall' );
 load_plugin_textdomain( 'jayj-quicktag', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 
 /**
- * Uninstall function to remove the Quicktags from the database.
+ * Removes the Quicktags from the database.
  *
  * @since 1.0.0
  */
@@ -30,7 +30,7 @@ function jayj_quicktag_uninstall() {
  * @since 1.0.0
  */
 function jayj_quicktag_add_options_page() {
-	add_options_page( 'Jayj Quicktag', 'Jayj Quicktag', 'manage_options', __FILE__, 'jayj_quicktag_options_page' );
+	add_options_page( __( 'Jayj Quicktag', 'jayj-quicktag' ), __( 'Jayj Quicktag', 'jayj-quicktag' ), 'manage_options', __FILE__, 'jayj_quicktag_options_page' );
 }
 
 add_action( 'admin_menu', 'jayj_quicktag_add_options_page' );
