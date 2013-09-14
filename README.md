@@ -1,10 +1,10 @@
 # Jayj Quicktag
 
-**Contributors:** Jayjdk
-**Tags:** quicktag, quicktags, editor, quick, tag, generator, import, export
-**Requires at least:** 3.3
-**Tested up to:** 3.6.1
-**Stable tag:** 1.2.4
+**Contributors:** Jayjdk  
+**Tags:** quicktag, quicktags, editor, quick, tag, generator, import, export  
+**Requires at least:** 3.3  
+**Tested up to:** 3.6.1  
+**Stable tag:** 1.2.4  
 
 Allows you easily to add custom Quicktags to the post editor.
 
