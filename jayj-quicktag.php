@@ -9,34 +9,14 @@
  * License: GPLv2 or later
  */
 
-register_activation_hook( __FILE__, 'jayj_quicktag_install' );
+/* Register uninstall function. */
 register_uninstall_hook( __FILE__, 'jayj_quicktag_uninstall' );
 
-/* Load the textdomain for translation */
+/* Load the textdomain for translation. */
 load_plugin_textdomain( 'jayj-quicktag', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 
 /**
- * Set up default options on install
- *
- * @since 1.0.0
- * @uses apply_filters() Calls 'jayj_quicktag_defaults' filter on the defaults array
- */
-function jayj_quicktag_install() {
-	$defaults = array( 'buttons' => array( array(
-			'text'  => __( 'Example', 'jayj-quicktag' ),
-			'title' => __( 'Example Title', 'jayj-quicktag' ),
-			'start' => '<example>',
-			'end'   => '</example>'
-		)
-	) );
-
-	add_option( 'jayj_qt_settings', apply_filters( 'jayj_quicktag_defaults', $defaults ) );
-}
-
-/**
- * Uninstall function
- *
- * Remove Quicktags from the database
+ * Uninstall function to remove the Quicktags from the database.
  *
  * @since 1.0.0
  */
