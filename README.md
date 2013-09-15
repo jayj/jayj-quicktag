@@ -10,11 +10,9 @@ Allows you easily to add custom Quicktags to the post editor.
 
 ## Description
 
-This plugin, Jayj Quicktag, allows you easily to add custom Quicktags to the post, page or a custom editor.
+This plugin, Jayj Quicktag, allows you easily to add custom Quicktags to the post, page, or a custom editor.
 
 It adds a settings page where you can add all the Quicktags you want (see Screenshots)
-
-It's uses the new WordPress 3.3 Quicktags changes so it won't work with older versions of WordPress.
 
 It supports both import and export of your Quicktags so you easily can add them to another WordPress install.
 
@@ -37,9 +35,10 @@ Yes. You can add a self-closing Quicktag (like &lt;hr /&gt;) by leaving "End Tag
 
 ### Can I delete a Quicktag?
 
-Yes, you can. There's two ways. The first one is to click the delete link on the right (you'll see it when you roll over the row)
+Yes, you can. There's two ways:
 
-The other way is to leave the "Button Label" field empty.
+1. The first one is to click the delete button on the right.
+2. The other way is to leave the "Button Label" field empty.
 
 ### Can I change the order of the Quicktags?
 
@@ -63,8 +62,9 @@ The Quicktags should now be imported and it doesn't overwrite the old ones.
 ## Changelog
 
 ### 1.3.0
-* Options page tested with MP6
+* Settings page tested with MP6
 * An example quicktag is showed when adding a new quicktag
+* Added a drop zone when dragging a quicktag
 * The plugin name in the menu can now be translated
 * Removed install function that added a example quicktag as it's not needed anymore
 * Added minified version of the admin javascript
