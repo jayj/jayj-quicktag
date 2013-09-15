@@ -4,135 +4,159 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Jayj Quicktag 1.2.2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/jayj-quicktag\n"
-"POT-Creation-Date: 2012-02-06 22:26:34+00:00\n"
-"PO-Revision-Date: 2012-02-06 23:27+0100\n"
-"Last-Translator: Jesper <kontakt@jayj.dk>\n"
+"POT-Creation-Date: 2013-09-15 23:24+0100\n"
+"PO-Revision-Date: 2013-09-15 23:27+0100\n"
+"Last-Translator: Jesper Johansen\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
 
-#: jayj-quicktag.php:26
-msgid "Example"
-msgstr "Eksempel"
+#: jayj-quicktag.php:33
+msgid "Jayj Quicktag"
+msgstr "Jayj Quicktag"
 
-#: jayj-quicktag.php:27
-msgid "Example Title"
-msgstr "Eksempel titel"
-
-#: jayj-quicktag.php:83
+#: jayj-quicktag.php:60
 msgid "Jayj Quicktag Options"
 msgstr "Jayj Quicktag indstillinger"
 
-#: jayj-quicktag.php:106
+#: jayj-quicktag.php:84
 msgid "Quicktags succesfully imported"
-msgstr "Quicktagsne blev importeret uden fejl"
+msgstr "Quicktags importeret uden fejl"
 
-#: jayj-quicktag.php:108
+#: jayj-quicktag.php:86
 msgid "Error: Quicktags could not be imported"
-msgstr "Fejl: Quicktagsne kunne ikke importeres."
+msgstr "Fejl: Quicktags kunne ikke importeres."
 
-#: jayj-quicktag.php:121
-#: jayj-quicktag.php:141
-#: jayj-quicktag.php:153
+#: jayj-quicktag.php:104 jayj-quicktag.php:126 jayj-quicktag.php:157
 msgid "Change order"
 msgstr "Skift rækkefølge"
 
-#: jayj-quicktag.php:122
+#: jayj-quicktag.php:105
 msgid "Button Label *"
-msgstr "Knap navn"
+msgstr "Knap navn *"
 
-#: jayj-quicktag.php:123
+#: jayj-quicktag.php:106
 msgid "Title Attribute"
 msgstr "Titel attribute"
 
-#: jayj-quicktag.php:124
+#: jayj-quicktag.php:107
 msgid "Start Tag(s) *"
 msgstr "Start tag(s) *"
 
-#: jayj-quicktag.php:125
+#: jayj-quicktag.php:108
 msgid "End Tag(s)"
 msgstr "Slut tag(s)"
 
-#: jayj-quicktag.php:126
-#: jayj-quicktag.php:146
-#: jayj-quicktag.php:158
-msgid "Remove button"
-msgstr "Fjern knap"
+#: jayj-quicktag.php:109 jayj-quicktag.php:147
+msgid "Remove quicktag"
+msgstr "Fjern quicktag"
 
-#: jayj-quicktag.php:154
+#: jayj-quicktag.php:165
 msgid "Label of the Quicktag"
 msgstr "Navnet på Quicktagget"
 
-#: jayj-quicktag.php:155
+#: jayj-quicktag.php:165
+msgid "Example"
+msgstr "Eksempel"
+
+#: jayj-quicktag.php:169
 msgid "Title attribute of the Quicktag"
 msgstr "Titel attributen til Quicktagget"
 
-#: jayj-quicktag.php:156
+#: jayj-quicktag.php:169
+msgid "Example title"
+msgstr "Eksempel titel"
+
+#: jayj-quicktag.php:173
 msgid "Start tag(s)"
 msgstr "Start tag(s)"
 
-#: jayj-quicktag.php:157
-msgid "End tag(s)"
-msgstr "Slut tag(s)"
+#: jayj-quicktag.php:173
+msgid "<example>"
+msgstr "<eksempel>"
 
-#: jayj-quicktag.php:165
+#: jayj-quicktag.php:177
+msgid "Optional: End tag(s)"
+msgstr "Valgfri: Slut tag(s)"
+
+#: jayj-quicktag.php:177
+msgid "</example>"
+msgstr "</example>"
+
+#: jayj-quicktag.php:181
+msgid "Remove button"
+msgstr "Fjern knap"
+
+#: jayj-quicktag.php:188
 msgid "Save Changes"
 msgstr "Gem ændringer"
 
-#: jayj-quicktag.php:166
+#: jayj-quicktag.php:190
 msgid "+ Add New Button"
-msgstr "+ Tilføj ny knap"
+msgstr "+ Tilføj ny"
 
-#: jayj-quicktag.php:176
-#: jayj-quicktag.php:191
+#: jayj-quicktag.php:201 jayj-quicktag.php:217
 msgid "Click to toggle"
 msgstr "Klik for at ændre"
 
-#: jayj-quicktag.php:177
+#: jayj-quicktag.php:203
 msgid "Export Quicktags"
 msgstr "Eksportér Quicktags"
 
-#: jayj-quicktag.php:180
-msgid "Export your saved Quicktags data by highlighting this text and either"
-msgstr "Exportér dine gemte Quicktags knapper ved at markere følgende tekst og enten"
+#: jayj-quicktag.php:206
+msgid ""
+"Export your saved Quicktags data by highlighting the following text, and "
+"either:"
+msgstr ""
+"Exportér dine gemte Quicktags knapper ved at markere følgende tekst, og "
+"enten:"
 
-#: jayj-quicktag.php:182
-msgid "Copy/paste it into a blank .txt file. Then save the file for importing into another install of WordPress later."
-msgstr "Kopier/indsæt det i en tom .txt-fil. Gem derefter filen til import i en anden installation af WordPress senere."
+#: jayj-quicktag.php:208
+msgid ""
+"Copy/paste it into a blank .txt file. Then save the file for importing into "
+"another install of WordPress later."
+msgstr ""
+"Kopier/indsæt det i en tom .txt-fil. Gem derefter filen til import i en "
+"anden installation af WordPress senere."
 
-#: jayj-quicktag.php:183
-msgid "Or you could just paste it into <code>Jayj Quicktag > Import Quicktags</code> on another install of WordPress."
-msgstr "Eller du kan bare sætte den ind i <code>Jayj Quicktag> Importér Quicktags</code> i en anden installation af WordPress."
+#: jayj-quicktag.php:209
+msgid ""
+"Or you could paste it into <code>Jayj Quicktag > Import Quicktags</code> on "
+"another WordPress install."
+msgstr ""
+"Eller du kan bare sætte den ind i <code>Jayj Quicktag > Importér Quicktags</"
+"code> i en anden installation af WordPress."
 
-#: jayj-quicktag.php:192
-#: jayj-quicktag.php:197
+#: jayj-quicktag.php:219 jayj-quicktag.php:224
 msgid "Import Quicktags"
 msgstr "Importér Quicktags"
 
-#: jayj-quicktag.php:195
-msgid "To import your Quicktags, copy and paste the content from \"Export Quicktags\" into this textarea and press the \"Import Quicktags\" button below."
-msgstr "For at importére dine Quicktags, skal du kopiere og indsætte indholdet fra \"Eksportér Quicktags\" ind i følgende tekstfelt og trykke på \"Importér Quicktags\" knappen nedenfor."
+#: jayj-quicktag.php:222
+msgid ""
+"To import your Quicktags, copy and paste the content from \"Export Quicktags"
+"\" into this textarea and press the \"Import Quicktags\" button below."
+msgstr ""
+"For at importére dine Quicktags, skal du kopiere og indsætte indholdet fra "
+"\"Eksportér Quicktags\" ind i følgende tekstfelt og trykke på \"Importér "
+"Quicktags\" knappen nedenfor."
 
-#. Plugin Name of the plugin/theme
-msgid "Jayj Quicktag"
-msgstr "Jayj Quicktags"
+#~ msgid "http://jayj.dk/plugins/jayj-quicktag/"
+#~ msgstr "http://jayj.dk/plugins/jayj-quicktag/"
 
-#. Plugin URI of the plugin/theme
-msgid "http://jayj.dk/plugins/jayj-quicktag/"
-msgstr "http://jayj.dk/plugins/jayj-quicktag/"
+#~ msgid ""
+#~ "Allows you to easily add custom quicktags to the editor. Requires at "
+#~ "least WordPress 3.3 to work"
+#~ msgstr ""
+#~ "Giver dig mulighed for at tilføje dine egne hurtigknapper (Quicktags) til "
+#~ "editoren. Kræver mindst WordPress 3.3 for at virke."
 
-#. Description of the plugin/theme
-msgid "Allows you to easily add custom quicktags to the editor. Requires at least WordPress 3.3 to work"
-msgstr "Giver dig mulighed for at tilføje dine egne hurtigknapper (Quicktags) til editoren. Kræver mindst WordPress 3.3 for at virke."
+#~ msgid "Jesper J"
+#~ msgstr "Jesper J"
 
-#. Author of the plugin/theme
-msgid "Jesper J"
-msgstr "Jesper J"
-
-#. Author URI of the plugin/theme
-msgid "http://jayj.dk"
-msgstr "http://jayj.dk"
+#~ msgid "http://jayj.dk"
+#~ msgstr "http://jayj.dk"
 
 #~ msgid ""
 #~ "Export your saved Quicktags data by highlighting this text and either\r\n"
