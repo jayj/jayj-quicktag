@@ -153,34 +153,34 @@ function jayj_quicktag_options_page() { ?>
 					<!-- Empty row -->
 					<?php $i = 9999; ?>
 
-                    <tr valign="top" class="jayj-quicktag-clone <?php if ( empty ( $options['buttons'] ) ) echo 'jayj-quicktag-clone-show'; ?>">
-                    	<td class="jayj-quicktag-order" title="<?php esc_attr_e( 'Change order', 'jayj-quicktag' ); ?>"><?php echo $i; ?></td>
+					<tr valign="top" class="jayj-quicktag-clone <?php if ( empty ( $options['buttons'] ) ) echo 'jayj-quicktag-clone-show'; ?>">
+						<td class="jayj-quicktag-order" title="<?php esc_attr_e( 'Change order', 'jayj-quicktag' ); ?>"><?php echo $i; ?></td>
 
-                    	<?php
-                    		/* Set the name attribute. */
-                    		$clone_name = 'jayj_qt_settings[buttons][' . $i . ']';
-                    	?>
+						<?php
+							/* Set the name attribute. */
+							$clone_name = 'jayj_qt_settings[buttons][' . $i . ']';
+						?>
 
-                        <td>
-                        	<input type="text" name="<?php echo esc_attr( $clone_name ); ?>[text]" title="<?php esc_attr_e( 'Label of the Quicktag', 'jayj-quicktag' ); ?>" placeholder="<?php esc_attr_e( 'Example', 'jayj-quicktag' ); ?>" value="" />
-                        </td>
+						<td>
+							<input type="text" name="<?php echo esc_attr( $clone_name ); ?>[text]" title="<?php esc_attr_e( 'Label of the Quicktag', 'jayj-quicktag' ); ?>" placeholder="<?php esc_attr_e( 'Example', 'jayj-quicktag' ); ?>" value="" />
+						</td>
 
-                        <td>
-                        	<input type="text" name="<?php echo esc_attr( $clone_name ); ?>[title]" title="<?php esc_attr_e( 'Title attribute of the Quicktag', 'jayj-quicktag' ); ?>" placeholder="<?php esc_attr_e( 'Example title', 'jayj-quicktag' ); ?>" value="" />
-                        </td>
+						<td>
+							<input type="text" name="<?php echo esc_attr( $clone_name ); ?>[title]" title="<?php esc_attr_e( 'Title attribute of the Quicktag', 'jayj-quicktag' ); ?>" placeholder="<?php esc_attr_e( 'Example title', 'jayj-quicktag' ); ?>" value="" />
+						</td>
 
-                        <td>
-                        	<textarea class="code" name="<?php echo esc_attr( $clone_name ); ?>[start]" rows="2" cols="25" title="<?php esc_attr_e( 'Start tag(s)', 'jayj-quicktag' ); ?>" placeholder="<?php esc_attr_e( '<example>', 'cakifo'); ?>"></textarea>
-                        </td>
+						<td>
+							<textarea class="code" name="<?php echo esc_attr( $clone_name ); ?>[start]" rows="2" cols="25" title="<?php esc_attr_e( 'Start tag(s)', 'jayj-quicktag' ); ?>" placeholder="<?php esc_attr_e( '<example>', 'cakifo'); ?>"></textarea>
+						</td>
 
-                        <td>
-                        	<textarea class="code" name="<?php echo esc_attr( $clone_name ); ?>[end]" rows="2" cols="25" title="<?php esc_attr_e( 'Optional: End tag(s)', 'jayj-quicktag' ); ?>" placeholder="<?php esc_attr_e( '</example>', 'jayj-quicktag' ); ?>"></textarea>
-                        </td>
+						<td>
+							<textarea class="code" name="<?php echo esc_attr( $clone_name ); ?>[end]" rows="2" cols="25" title="<?php esc_attr_e( 'Optional: End tag(s)', 'jayj-quicktag' ); ?>" placeholder="<?php esc_attr_e( '</example>', 'jayj-quicktag' ); ?>"></textarea>
+						</td>
 
 						<td class="jayj-quicktag-remove">
 							<button class="button jayj-quicktag-remove-button" title="<?php esc_attr_e( 'Remove button', 'jayj-quicktag' ); ?>">&times;</button>
 						</td>
-                    </tr> <!-- .jayj-quicktag-clone -->
+					</tr> <!-- .jayj-quicktag-clone -->
 			</tbody>
 		</table>
 
