@@ -61,6 +61,14 @@ The Quicktags should now be imported and it doesn't overwrite the old ones.
 
 == Changelog ==
 
+= 1.3.0 =
+* Options page tested with MP6
+* An example quicktag is showed when adding a new quicktag
+* The plugin name in the menu can now be translated
+* Removed install function that added a example quicktag as it's not needed anymore
+* Added minified version of the admin javascript
+* Code cleanup
+
 = 1.2.4 =
 * Bug fix: Blank White screen when uninstalling the plugin
 
