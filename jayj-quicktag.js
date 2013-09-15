@@ -1,4 +1,4 @@
-// Javascript for Jayj Quicktag
+/* global postboxes */
 jQuery(document).ready( function($) {
 
 	/* Open/close metaboxes */
@@ -6,76 +6,81 @@ jQuery(document).ready( function($) {
 	postboxes.add_postbox_toggles( 'settings_page_jayj-quicktag/jayj-quicktag' );
 
 	/**
-	 * Credits to the Advanced Custom Fields plugin for this code
+	 * Add new and reordering functionality
+	 *
+	 * Credits to the Advanced Custom Fields plugin for initial code
 	 */
 
-	// Update Order Numbers
-	function update_order_numbers(div) {
-		div.children('tbody').children('tr.jayj-row').each(function(i) {
-			$(this).children('td.jayj-order').html(i+1);
+	// Update the order numbers
+	function update_order_numbers( table ) {
+		table.find( '.jayj-quicktag-row' ).each(function( i ) {
+			$(this).children( '.jayj-quicktag-order' ).html( i + 1 );
 		});
 	}
-	
-	// Make Sortable
-	function make_sortable(div){
+
+	// Make the rows sortable
+	function make_sortable( table ) {
 		var fixHelper = function(e, ui) {
 			ui.children().each(function() {
-				$(this).width($(this).width());
+				$(this).width( $(this).width() );
 			});
 			return ui;
 		};
 
-		div.children('tbody').unbind('sortable').sortable({
-			update: function(event, ui){
-				update_order_numbers(div);
+		table.children( 'tbody' ).sortable({
+			update: function() {
+				update_order_numbers( table );
 			},
-			handle: 'td.jayj-order',
-			helper: fixHelper
+			helper: fixHelper,
+			handle: '.jayj-quicktag-order',
+			placeholder:"jayj-quicktag-row-placeholder",
 		});
 	}
 
-	var div = $('.jayj-quicktags-table'),
-		row_count = div.children('tbody').children('tr.jayj-row').length;
-
 	// Make the table sortable
-	make_sortable(div);
+	make_sortable( $( '.jayj-quicktag-table' ) );
 
-	// Add button
-	$('#jayj-add-button').live('click', function(){
+	// Add new button
+	$( '.jayj-quicktag-add-quicktag' ).on( 'click', function() {
 
-		var div = $('.jayj-quicktags-table'),			
-			row_count = div.children('tbody').children('tr.jayj-row').length,
-			new_field = div.children('tbody').children('tr.jayj-clone').clone(false); // Create and add the new field
+		var table = $( '.jayj-quicktag-table' ),
+			tbody = table.children( 'tbody' ),
+			count = tbody.children( '.jayj-quicktag-row' ).length,
+			new_row = tbody.children( '.jayj-quicktag-clone' ).clone( false ); // Create and add the new field
 
-		new_field.attr( 'class', 'jayj-row' );
+		new_row.attr( 'class', 'jayj-quicktag-row' );
 
-		// Update names
-		new_field.find('[name]').each(function(){
-			var count = parseInt(row_count);
-			var name = $(this).attr('name').replace('[999]','[' + count + ']');
-			$(this).attr('name', name);
+		// Update the name attributes
+		new_row.find( '[name]' ).each( function() {
+			var name = $(this).attr( 'name' ).replace( '[9999]', '[' + count + ']' );
+
+			$(this).attr( 'name', name );
 		});
 
-		// Add row
-		div.children('tbody').append(new_field); 
-		update_order_numbers(div);
+		// Add the new row
+		table.children( 'tbody' ).append( new_row );
+
+		update_order_numbers( table );
 
 		// There is now 1 more row
-		row_count ++;
-
-		return false;	
-	});
-
-	// Remove button
-	$('.jayj-quicktags-table .jayj-remove-button').live('click', function(){
-		var div = $('.jayj-quicktags-table'),
-			tr = $(this).closest('tr');
-
-		tr.animate({'left' : '50px', 'opacity' : 0}, 250, function(){
-			tr.remove();
-			update_order_numbers(div);
-		});
+		count ++;
 
 		return false;
+	});
+
+	// Remove quicktag
+	$( '.jayj-quicktag-table' ).delegate( '.jayj-quicktag-remove-button', 'click', function( e ) {
+		var table = $( '.jayj-quicktag-table' ),
+			tr = $(this).closest( 'tr' );
+
+		tr.animate({
+			'left' : '50px',
+			'opacity' : 0
+		}, 250, function() {
+			tr.remove();
+			update_order_numbers( table );
+		});
+
+		e.preventDefault();
 	});
 });
