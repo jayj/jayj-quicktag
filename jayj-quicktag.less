@@ -1,0 +1,107 @@
+/*!
+ * CSS for Jayj Quicktag
+ */
+
+/* Table */
+.jayj-quicktag-table {
+	td {
+		border-right: 1px solid #ededed;
+		border-bottom: 1px solid #ededed;
+		padding: 8px;
+	}
+
+	// Last and second last row
+	// The last row is the hidden clone
+	tr:nth-last-child(2) td,
+	tr:last-child td {
+		border-bottom: 0;
+	}
+
+	// Last table cell in each row
+	tr td:last-child {
+		border-right: 0;
+	}
+}
+
+// Remove button
+td.jayj-quicktag-remove {
+	width: 16px;
+	vertical-align: middle;
+
+	.button {
+		border-radius: 50%;
+		opacity: 0.75;
+	}
+
+	.jayj-quicktag-row:hover & .button {
+		opacity: 1;
+	}
+}
+
+// Reorder the rows
+td.jayj-quicktag-order {
+	color: #aaa;
+	cursor: move;
+	font-size: 15px;
+	width: 16px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+// The drop zone
+.jayj-quicktag-row-placeholder {
+	background: #e7e7e7;
+	border: 1px dotted #bbb;
+	height: 70px;
+}
+
+// Hide the clone
+.jayj-quicktag-clone {
+	display: none;
+}
+
+.jayj-quicktag-clone-show {
+	display: table-row;
+
+	.jayj-quicktag-order {
+		color: #fff;
+	}
+}
+
+// Save buttons
+.jayj-quicktag-table-footer {
+	margin-top: 20px;
+
+	#submit {
+		margin-right: 3px;
+	}
+}
+
+/* Import & export boxes */
+.jayj-quicktag-postboxes {
+	.postbox {
+		// font-size: 13px;
+		float: left;
+		width: 48%;
+		margin-right: 2%;
+	}
+
+	.postbox:last-of-type {
+		margin-right: 0;
+	}
+
+	// Title
+	.js & .hndle {
+		cursor: pointer;
+	}
+
+	// Content
+	textarea {
+		width: 100%;
+	}
+
+	li {
+		list-style: disc;
+		margin-left: 24px;
+	}
+}

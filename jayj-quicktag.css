@@ -1,56 +1,15 @@
-/* CSS for Jayj Quicktag */
-.jayj-quicktags-postbox { font-size: 13px; float: left; width: 48%; margin-right: 3%; }
-.jayj-quicktags-postbox-last { margin-right: 0; }
-.jayj-quicktags-postbox .hndle { cursor: pointer; }
-.jayj-quicktags-postbox textarea, .jayj-quicktags-table input, .jayj-quicktags-table textarea { width: 95%; }
-.jayj-quicktags-postbox li { list-style: disc; margin-left: 40px; }
-
-/* Change order and remove button CSS */
-.jayj-quicktags-table tr.jayj-clone { display: none; }
-.jayj-quicktags-table .jayj-order { cursor: move; }
-
-a.jayj-remove-button { display: block; font-size: 20px; visibility: hidden; }	
-.jayj-quicktags-table > tbody > tr:hover a.jayj-remove-button { visibility: visible; }
-
-.jayj-quicktags-table > tbody > tr > td {
-	background: #fff;
-    border-right: 1px solid #ededed;
-    border-bottom: 1px solid #ededed;
-    padding: 8px;
-    position: relative;
-}
-
-.jayj-quicktags-table > tbody > tr:last-child td { border-bottom: 0 none; }
-.jayj-quicktags-table > tbody > tr td:last-child { border-right: 0 none; }
-.jayj-quicktags-table > thead > tr > th { border-right: 1px solid #e1e1e1; }
-.jayj-quicktags-table > thead > tr > th:last-child { border-right: 0 none; }
-
-.jayj-quicktags-table tr td.jayj-order,
-.jayj-quicktags-table tr th.jayj-order {
-	width: 16px;
-	text-align: center;
-	vertical-align: middle;
-	color: #aaa;
-	text-shadow: #fff 0 1px 0;
-}
-
-.jayj-quicktags-table .jayj-remove {
-	width: 16px;
-	vertical-align: middle;
-}
-
-.jayj-table-footer {
-	position: relative;
-	overflow: hidden;
-	margin-top: 10px;
-	padding: 8px 0;
-}
-
-.submit {
-	float: left;
-}
-
-#jayj-add-button {
-	margin:  1.9em 15px;
-	float: left;
-}
+.jayj-quicktag-table td{border-right:1px solid #ededed;border-bottom:1px solid #ededed;padding:8px}
+.jayj-quicktag-table tr:nth-last-child(2) td,.jayj-quicktag-table tr:last-child td{border-bottom:0}
+.jayj-quicktag-table tr td:last-child{border-right:0}
+td.jayj-quicktag-remove{width:16px;vertical-align:middle}td.jayj-quicktag-remove .button{border-radius:50%;opacity:.75}
+.jayj-quicktag-row:hover td.jayj-quicktag-remove .button{opacity:1}
+td.jayj-quicktag-order{color:#aaa;cursor:move;font-size:15px;width:16px;text-align:center;vertical-align:middle}
+.jayj-quicktag-row-placeholder{background:#e7e7e7;border:1px dotted #bbb;height:70px}
+.jayj-quicktag-clone{display:none}
+.jayj-quicktag-clone-show{display:table-row}.jayj-quicktag-clone-show .jayj-quicktag-order{color:#fff}
+.jayj-quicktag-table-footer{margin-top:20px}.jayj-quicktag-table-footer #submit{margin-right:3px}
+.jayj-quicktag-postboxes .postbox{float:left;width:48%;margin-right:2%}
+.jayj-quicktag-postboxes .postbox:last-of-type{margin-right:0}
+.js .jayj-quicktag-postboxes .hndle{cursor:pointer}
+.jayj-quicktag-postboxes textarea{width:100%}
+.jayj-quicktag-postboxes li{list-style:disc;margin-left:24px}
