@@ -208,19 +208,28 @@ function jayj_quicktag_options_validate( $input ) {
 	return $input;
 }
 
+
 /**
- * Loads the JavaScript and CSS files required for managing the meta boxes on the plugin settings
- * page, which allows users to toggle the metaboxes
- * and for ordering the Quicktags
+ * Loads the JavaScript and CSS files required for the options page.
+ *
+ * This manages the meta boxes on the plugin settings page, which
+ * allows users to toggle the metaboxes, and for ordering the Quicktags.
  *
  * @since 1.1.0
  */
 function jayj_quicktag_settings_page_enqueue_scripts( $hook_suffix ) {
-	if ( $hook_suffix == 'settings_page_jayj-quicktag/jayj-quicktag' ) {
-		wp_enqueue_script( 'postbox' );
-		wp_enqueue_script( 'jayj-quicktag', plugins_url( 'jayj-quicktag.js', __FILE__ ), array( 'jquery', 'postbox' ), '1.2' );
-		wp_enqueue_style( 'jayj-quicktag', plugins_url( 'jayj-quicktag.css', __FILE__ ), array(), '1.2' );
-	}
+	if ( 'settings_page_jayj-quicktag/jayj-quicktag' != $hook_suffix )
+		return;
+
+	// Use minified libraries if SCRIPT_DEBUG is turned off
+	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+
+	wp_enqueue_script( 'postbox' );
+	wp_enqueue_script( 'jquery-ui-sortable' );
+
+	wp_enqueue_script( 'jayj-quicktag', plugins_url( 'jayj-quicktag' . $suffix . '.js', __FILE__ ), array( 'jquery', 'postbox' ), '1.3' );
+
+	wp_enqueue_style( 'jayj-quicktag', plugins_url( 'jayj-quicktag.css', __FILE__ ), array(), '1.3' );
 }
 
 add_action( 'admin_enqueue_scripts', 'jayj_quicktag_settings_page_enqueue_scripts' );
