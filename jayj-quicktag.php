@@ -1,12 +1,12 @@
 <?php
 /**
  * Plugin Name: Jayj Quicktag
- * Plugin URI:	http://jayj.dk/plugins/jayj-quicktag/
+ * Plugin URI:  http://jayj.dk/plugins/jayj-quicktag/
  * Description: Allows you to easily add custom quicktags to the editor. Requires at least WordPress 3.3 to work
  * Author:      Jesper J
  * Author URI:  http://jayj.dk
- * Version:     1.2.4
- * License: GPLv2 or later
+ * Version:     1.3.0
+ * License:     GPLv2 or later
  */
 
 /* Register uninstall function. */

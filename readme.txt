@@ -3,7 +3,7 @@ Contributors: Jayjdk
 Tags: quicktag, quicktags, editor, quick, tag, generator, import, export
 Requires at least: 3.3
 Tested up to: 3.6.1
-Stable tag: 1.2.4
+Stable tag: 1.3.0
 
 Allows you easily to add custom Quicktags to the post editor.
 
@@ -28,7 +28,7 @@ It supports both import and export of your Quicktags so you easily can add them 
 
 = Does this work with older versions than 3.3? =
 
-No, sorry. Due to the [javascript changes](http://wpdevel.wordpress.com/2011/09/23/javascript-changes-in-3-3/) in 3.3 this plugin **does not** work with older versions. 
+No, sorry. Due to the [javascript changes](http://wpdevel.wordpress.com/2011/09/23/javascript-changes-in-3-3/) in 3.3 this plugin **does not** work with older versions.
 
 = Can I add a self-closing Quicktag? =
 
@@ -47,7 +47,7 @@ Yes. Since 1.2 you can change the order of the tags. Just roll over the number o
 = Can I export/import Quicktags? =
 Yes. Version 1.1 introduced the import and export feature.
 
-On the options page, click the "Export Quicktags" title. That should give you a textarea with some strange looking code. 
+On the options page, click the "Export Quicktags" title. That should give you a textarea with some strange looking code.
 You should copy/save that so you can use it to import on another site.
 
 To find the import feature, click on the "Import Quicktags" on the same page. Paste the copied code into the textarea and click "Import Quicktags".
