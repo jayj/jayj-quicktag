@@ -5,8 +5,10 @@
  * Description: Allows you to easily add custom quicktags to the editor. Requires at least WordPress 3.3 to work
  * Author:      Jesper J
  * Author URI:  http://jayj.dk
- * Version:     1.3.0
+ * Version:     1.3.1
  * License:     GPLv2 or later
+ * Text Domain: jayj-quicktag
+ * Domain Path: /languages
  */
 
 /* Register uninstall function. */
