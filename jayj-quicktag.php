@@ -16,7 +16,7 @@ register_uninstall_hook( __FILE__, 'jayj_quicktag_uninstall' );
 load_plugin_textdomain( 'jayj-quicktag', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 
 /**
- * Removes the Quicktags from the database.
+ * Removes the Quicktags from the database
  *
  * @since 1.0.0
  */
@@ -25,7 +25,7 @@ function jayj_quicktag_uninstall() {
 }
 
 /**
- * Add options page
+ * Adds the options page
  *
  * @since 1.0.0
  */
@@ -47,7 +47,7 @@ function jayj_quicktag_register_setting() {
 add_action( 'admin_init', 'jayj_quicktag_register_setting' );
 
 /**
- * The Quicktags Options page
+ * The Quicktags options page
  *
  * @since 1.0.0
  */
@@ -320,19 +320,19 @@ function jayj_quicktag_editor() {
 					<?php if ( empty( $btn['end'] ) ) { ?>
 						QTags.addButton(
 							'jayj_qtag_<?php echo intval( $number ); ?>',
-							'<?php echo esc_attr( $btn['text'] ); ?>',
+							'<?php echo esc_js( $btn['text'] ); ?>',
 							'<?php echo addslashes( $btn['start'] ); ?>',
 							'', '',
-							'<?php echo esc_attr( $title ); ?>'
+							'<?php echo esc_js( $title ); ?>'
 						);
 					<?php } else { ?>
 						QTags.addButton(
 							'jayj_qtag_<?php echo intval( $number ); ?>',
-							'<?php echo esc_attr( $btn['text'] ); ?>',
+							'<?php echo esc_js( $btn['text'] ); ?>',
 							'<?php echo addslashes( $btn['start'] ); ?>',
 							'<?php echo addslashes( $btn['end'] ); ?>',
 							'',
-							'<?php echo esc_attr( $title ); ?>'
+							'<?php echo esc_js( $title ); ?>'
 						);
 					<?php } // endif
 
