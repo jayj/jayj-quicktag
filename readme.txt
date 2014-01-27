@@ -1,9 +1,11 @@
 === Jayj Quicktag ===
 Contributors: Jayjdk
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XHKUSU26XBKEU
 Tags: quicktag, quicktags, editor, quick, tag, generator, import, export
+License: GPLv2 or later
 Requires at least: 3.3
-Tested up to: 3.6.1
-Stable tag: 1.3.0
+Tested up to: 3.8.1
+Stable tag: 1.3.1
 
 Allows you easily to add custom Quicktags to the post editor.
 
@@ -59,6 +61,10 @@ The Quicktags should now be imported and it doesn't overwrite the old ones.
 2. A post editor with the new Quicktags
 
 == Changelog ==
+
+= 1.3.1
+* Added Spanish translation by [Andrew Kurtis](http://www.webhostinghub.com/).
+* Tested with WordPress 3.8
 
 = 1.3.0 =
 * Settings page tested with MP6

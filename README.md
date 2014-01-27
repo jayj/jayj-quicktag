@@ -3,7 +3,7 @@
 **Contributors:** Jayjdk  
 **Tags:** quicktag, quicktags, editor, quick, tag, generator, import, export  
 **Requires at least:** 3.3  
-**Tested up to:** 3.6.1  
+**Tested up to:** 3.8.1  
 **Stable tag:** 1.3.0  
 
 Allows you easily to add custom Quicktags to the post editor.
@@ -60,6 +60,10 @@ The Quicktags should now be imported and it doesn't overwrite the old ones.
 2. A post editor with the new Quicktags
 
 ## Changelog
+
+### 1.3.1
+* Added Spanish translation by [Andrew Kurtis](http://www.webhostinghub.com/).
+* Tested with WordPress 3.8
 
 ### 1.3.0
 * Settings page tested with MP6
