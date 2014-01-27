@@ -64,10 +64,8 @@ function jayj_quicktag_options_page() { ?>
 	<form action="options.php" method="post">
 
 		<?php
-			/**
+			/*
 			 * Insert imported Quicktags
-			 *
-			 * @since 1.1.0
 			 */
 			if ( isset( $_POST['jayj-quicktag-import-save'] ) ) :
 
@@ -92,7 +90,7 @@ function jayj_quicktag_options_page() { ?>
 		<?php
 			settings_fields( 'jayj_quicktag_options' );
 
-			/* Get the saved options. */
+			// Get the saved options.
 			$options   = get_option( 'jayj_qt_settings' );
 			$quicktags = $options['buttons'];
 		?>
@@ -114,7 +112,7 @@ function jayj_quicktag_options_page() { ?>
 				<?php
 					if ( isset( $quicktags ) ) :
 
-					/* Loop through all the buttons. */
+					// Loop through all the buttons.
 					for ( $number = 0; $number < count( $quicktags ); $number++ ) :
 
 						if ( ! isset( $options['buttons'][$number] ) ) {
@@ -157,7 +155,7 @@ function jayj_quicktag_options_page() { ?>
 						<td class="jayj-quicktag-order" title="<?php esc_attr_e( 'Change order', 'jayj-quicktag' ); ?>"><?php echo $i; ?></td>
 
 						<?php
-							/* Set the name attribute. */
+							// Set the name attribute.
 							$clone_name = 'jayj_qt_settings[buttons][' . $i . ']';
 						?>
 
