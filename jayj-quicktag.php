@@ -57,8 +57,6 @@ function jayj_quicktag_options_page() { ?>
 
 <div class="wrap">
 
-	<?php screen_icon( 'options-general' ); ?>
-
 	<h2><?php _e( 'Jayj Quicktag Options', 'jayj-quicktag' ); ?></h2>
 
 	<br />
