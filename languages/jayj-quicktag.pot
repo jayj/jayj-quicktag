@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the Jayj Quicktag package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Jayj Quicktag 1.3\n"
+"Project-Id-Version: Jayj Quicktag 1.3.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/jayj-quicktag\n"
-"POT-Creation-Date: 2013-09-15 23:24+0100\n"
-"PO-Revision-Date: 2013-09-15 23:24+0100\n"
+"POT-Creation-Date: 2014-01-27 16:45+0100\n"
+"PO-Revision-Date: 2014-01-27 16:45+0100\n"
 "Last-Translator: Jesper Johansen\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: jayj-quicktag.php:33
+#: jayj-quicktag.php:35
 msgid "Jayj Quicktag"
 msgstr ""
 
@@ -26,113 +26,113 @@ msgstr ""
 msgid "Jayj Quicktag Options"
 msgstr ""
 
-#: jayj-quicktag.php:84
+#: jayj-quicktag.php:82
 msgid "Quicktags succesfully imported"
 msgstr ""
 
-#: jayj-quicktag.php:86
+#: jayj-quicktag.php:84
 msgid "Error: Quicktags could not be imported"
 msgstr ""
 
-#: jayj-quicktag.php:104 jayj-quicktag.php:126 jayj-quicktag.php:157
+#: jayj-quicktag.php:102 jayj-quicktag.php:124 jayj-quicktag.php:155
 msgid "Change order"
 msgstr ""
 
-#: jayj-quicktag.php:105
+#: jayj-quicktag.php:103
 msgid "Button Label *"
 msgstr ""
 
-#: jayj-quicktag.php:106
+#: jayj-quicktag.php:104
 msgid "Title Attribute"
 msgstr ""
 
-#: jayj-quicktag.php:107
+#: jayj-quicktag.php:105
 msgid "Start Tag(s) *"
 msgstr ""
 
-#: jayj-quicktag.php:108
+#: jayj-quicktag.php:106
 msgid "End Tag(s)"
 msgstr ""
 
-#: jayj-quicktag.php:109 jayj-quicktag.php:147
+#: jayj-quicktag.php:107 jayj-quicktag.php:145
 msgid "Remove quicktag"
 msgstr ""
 
-#: jayj-quicktag.php:165
+#: jayj-quicktag.php:163
 msgid "Label of the Quicktag"
 msgstr ""
 
-#: jayj-quicktag.php:165
+#: jayj-quicktag.php:163
 msgid "Example"
 msgstr ""
 
-#: jayj-quicktag.php:169
+#: jayj-quicktag.php:167
 msgid "Title attribute of the Quicktag"
 msgstr ""
 
-#: jayj-quicktag.php:169
+#: jayj-quicktag.php:167
 msgid "Example title"
 msgstr ""
 
-#: jayj-quicktag.php:173
+#: jayj-quicktag.php:171
 msgid "Start tag(s)"
 msgstr ""
 
-#: jayj-quicktag.php:173
+#: jayj-quicktag.php:171
 msgid "<example>"
 msgstr ""
 
-#: jayj-quicktag.php:177
+#: jayj-quicktag.php:175
 msgid "Optional: End tag(s)"
 msgstr ""
 
-#: jayj-quicktag.php:177
+#: jayj-quicktag.php:175
 msgid "</example>"
 msgstr ""
 
-#: jayj-quicktag.php:181
+#: jayj-quicktag.php:179
 msgid "Remove button"
 msgstr ""
 
-#: jayj-quicktag.php:188
+#: jayj-quicktag.php:186
 msgid "Save Changes"
 msgstr ""
 
-#: jayj-quicktag.php:190
+#: jayj-quicktag.php:188
 msgid "+ Add New Button"
 msgstr ""
 
-#: jayj-quicktag.php:201 jayj-quicktag.php:217
+#: jayj-quicktag.php:199 jayj-quicktag.php:215
 msgid "Click to toggle"
 msgstr ""
 
-#: jayj-quicktag.php:203
+#: jayj-quicktag.php:201
 msgid "Export Quicktags"
 msgstr ""
 
-#: jayj-quicktag.php:206
+#: jayj-quicktag.php:204
 msgid ""
 "Export your saved Quicktags data by highlighting the following text, and "
 "either:"
 msgstr ""
 
-#: jayj-quicktag.php:208
+#: jayj-quicktag.php:206
 msgid ""
 "Copy/paste it into a blank .txt file. Then save the file for importing into "
 "another install of WordPress later."
 msgstr ""
 
-#: jayj-quicktag.php:209
+#: jayj-quicktag.php:207
 msgid ""
 "Or you could paste it into <code>Jayj Quicktag > Import Quicktags</code> on "
 "another WordPress install."
 msgstr ""
 
-#: jayj-quicktag.php:219 jayj-quicktag.php:224
+#: jayj-quicktag.php:217 jayj-quicktag.php:222
 msgid "Import Quicktags"
 msgstr ""
 
-#: jayj-quicktag.php:222
+#: jayj-quicktag.php:220
 msgid ""
 "To import your Quicktags, copy and paste the content from \"Export Quicktags"
 "\" into this textarea and press the \"Import Quicktags\" button below."
