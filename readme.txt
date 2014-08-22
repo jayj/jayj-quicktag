@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: quicktag, quicktags, editor, quick, tag, generator, import, export
 License: GPLv2 or later
 Requires at least: 3.3
-Tested up to: 3.8.1
+Tested up to: 4.0
 Stable tag: 1.3.1
 
 Allows you easily to add custom Quicktags to the post editor.
