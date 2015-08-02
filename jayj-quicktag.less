@@ -2,17 +2,22 @@
  * CSS for Jayj Quicktag
  */
 
+.jayj-quicktag-form {
+	overflow-x: scroll;
+}
+
 /* Table */
 .jayj-quicktag-table {
+	margin-top: 20px;
+	max-width: 100%;
+
 	td {
-		border-right: 1px solid #ededed;
-		border-bottom: 1px solid #ededed;
-		padding: 8px;
+		// border-right: 1px solid #ededed;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		// padding: 8px;
+		vertical-align: middle;
 	}
 
-	// Last and second last row
-	// The last row is the hidden clone
-	tr:nth-last-child(2) td,
 	tr:last-child td {
 		border-bottom: 0;
 	}
@@ -31,6 +36,13 @@ td.jayj-quicktag-remove {
 	.button {
 		border-radius: 50%;
 		opacity: 0.75;
+		width: 32px;
+		height: 32px;
+		padding: 0;
+
+		.dashicons {
+		    margin: 3px 0 0 1px;
+		}
 	}
 
 	.jayj-quicktag-row:hover & .button {
@@ -39,13 +51,19 @@ td.jayj-quicktag-remove {
 }
 
 // Reorder the rows
+th.jayj-quicktag-order {
+	text-align: center;
+}
+
 td.jayj-quicktag-order {
 	color: #aaa;
 	cursor: move;
 	font-size: 15px;
-	width: 16px;
 	text-align: center;
-	vertical-align: middle;
+	// width: 16px;
+
+	// vertical-align: middle;
+
 }
 
 // The drop zone

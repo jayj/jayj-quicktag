@@ -43,6 +43,10 @@ jQuery(document).ready( function($) {
 	// Add new button
 	$( '.jayj-quicktag-add-quicktag' ).on( 'click', function() {
 
+		console.log('clicked new');
+
+
+
 		var table = $( '.jayj-quicktag-table' ),
 			tbody = table.children( 'tbody' ),
 			count = tbody.children( '.jayj-quicktag-row' ).length,
@@ -57,6 +61,11 @@ jQuery(document).ready( function($) {
 			$(this).attr( 'name', name );
 		});
 
+		var new_id = new_row.data( 'id' ).replace( '9999', count );
+		new_row.attr('data-id', new_id);
+
+		QTags.addButton('jayj_qtag_' + count, '&nbsp;', '', '');
+
 		// Add the new row
 		table.children( 'tbody' ).append( new_row );
 
@@ -65,8 +74,21 @@ jQuery(document).ready( function($) {
 		// There is now 1 more row
 		count ++;
 
+		$( ".jayj-quicktag-row .jayj-quicktag-name-input" ).on('input', test);
+
+
 		return false;
 	});
+
+	$( ".jayj-quicktag-row .jayj-quicktag-name-input" ).on('input', test);
+
+	function test() {
+		var row = $(this).parents('.jayj-quicktag-row'),
+			quicktag = $('.quicktags-toolbar .button[id$=' + row.attr('data-id') + ']');
+
+			quicktag.val($(this).val());
+		console.log(quicktag, quicktag.val(), $(this).val());
+	}
 
 	// Remove quicktag
 	$( '.jayj-quicktag-table' ).delegate( '.jayj-quicktag-remove-button', 'click', function( e ) {
