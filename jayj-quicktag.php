@@ -145,6 +145,7 @@ class Jayj_Quicktag_Plugin {
 		<?php
 			/* Insert imported quicktags */
 			if ( isset( $_POST['jayj-quicktag-import-save'] ) ) {
+				check_admin_referer( 'jayj-quicktag_import' );
 				$this->import_quicktags();
 			}
 		?>
@@ -254,6 +255,7 @@ class Jayj_Quicktag_Plugin {
 
 	<!-- Export/Import metaboxes -->
 	<form action="" method="post" name="jayj-quicktag-import" class="jayj-quicktag-postboxes">
+		<?php wp_nonce_field( 'jayj-quicktag_import' ); ?>
 
 		<?php $class = ( 'error' === $this->import_status ) ? 'open' : 'closed'; ?>
 
